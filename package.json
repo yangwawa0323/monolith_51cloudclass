@@ -1,0 +1,15 @@
+{
+  "name": "@51cloudclass/monolith",
+  "private": true,
+  "workspaces": [
+    "packages/website",
+    "packages/asciinema-react-page"
+  ],
+  "scripts": {
+    "dev:website": "npx lerna run develop --scope=@51cloudclass/website",
+    "dev:asciinema": "npx lerna run start --scope=@51cloudclass/asciinema-react-page"
+  },
+  "devDependencies": {
+    "lerna": "^6.0.3"
+  }
+}
